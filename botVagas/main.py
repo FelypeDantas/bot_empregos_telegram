@@ -5,7 +5,7 @@ import re
 import os
 
 # Pegando o token do bot das variáveis de ambiente
-TOKEN = os.getenv("TOKEN")
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 bot = telebot.TeleBot(TOKEN)
 
 # Dicionário para armazenar informações dos usuários
