@@ -6,6 +6,8 @@ import re
 
 # Pegando o token do bot das variáveis de ambiente
 TOKEN = os.getenv("TELEGRAM_TOKEN")
+if not TOKEN:
+    raise ValueError("O token do bot do Telegram não foi fornecido!")
 bot = telebot.TeleBot(TOKEN)
 
 # Dicionário para armazenar informações dos usuários
