@@ -1,8 +1,8 @@
+import os
 import telebot
 import requests
 from bs4 import BeautifulSoup
 import re
-import os
 
 # Pegando o token do bot das variáveis de ambiente
 TOKEN = os.getenv("TOKEN")
